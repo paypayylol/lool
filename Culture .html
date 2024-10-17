@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture and Heritage</title>
+    <link rel="stylesheet" href="culture.css"> 
+</head>
+<body>
+    <header class="header">
+        <img src="Logo.png" class="logo">
+        <h1 class="page-title">~Culture and Heritage~</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; 
+        </div>
+    </header>
+
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Culture.html">Culture and Heritage</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="language.html">Language</a></li>
+            <li><a href="more.html">More</a></li>
+        </ul>
+    </nav>
+
+    <section class="cultural-heritage-info">
+        <h2>Pamiri Cultural Heritage</h2>
+        <p>
+            The Pamir region is home to a rich and ancient culture that dates back thousands of years. The Pamiri people are known for their close connection to nature, their mountainous environment, and their unique traditions that blend Zoroastrian, Islamic, and local beliefs. 
+            Traditional music, dance, clothing, and storytelling are key aspects of Pamiri life, passed down through generations. Handicrafts, such as intricate wool and cotton textiles, showcase the Pamiri people's artistry, while festivals celebrate their cultural identity, reflecting the harmony between their spiritual life and their surroundings.
+        </p>
+    </section>
+
+    <div class="content">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="card active">
+                    <img src="h2.jpeg" alt="Hawaii">
+                    <div class="card-info">
+                        <h3>Enjoy the exotic of sunny Hawaii</h3>
+                        <p>Maui, Hawaii</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="hom1.jpeg" alt="Hawaii">
+                    <div class="card-info">
+                        <h3>Enjoy the exotic of sunny Hawaii</h3>
+                        <p>Maui, Hawaii</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="hom1.jpeg" alt="Hawaii">
+                    <div class="card-info">
+                        <h3>Enjoy the exotic of sunny Hawaii</h3>
+                        <p>Maui, Hawaii</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="ca10.jpg" alt="Hawaii">
+                    <div class="card-info">
+                        <h3>Enjoy the exotic of sunny Hawaii</h3>
+                        <p>Maui, Hawaii</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Ca1.jpeg" alt="Hawaii">
+                    <div class="card-info">
+                        <h3>Enjoy the exotic of sunny Hawaii</h3>
+                        <p>Maui, Hawaii</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Ca2.jpeg" alt="Hawaii">
+                    <div class="card-info">
+                        <h3>Enjoy the exotic of sunny Hawaii</h3>
+                        <p>Maui, Hawaii</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="ca3.jpeg" alt="Hawaii">
+                    <div class="card-info">
+                        <h3>Enjoy the exotic of sunny Hawaii</h3>
+                        <p>Maui, Hawaii</p>
+                    </div>
+                </div>
+                
+               
+            </div>
+            <div class="carousel-controls">
+                <span class="prev-btn">&#10094;</span>
+                <span class="next-btn">&#10095;</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            if (navbar.style.display === "block") {
+                navbar.style.display = "none";
+            } else {
+                navbar.style.display = "block";
+            }
+        }
+
+        let currentIndex = 0;
+        const cards = document.querySelectorAll('.card');
+        const totalCards = cards.length;
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        const carousel = document.querySelector('.carousel');
+
+        function updateCarousel() {
+            const cardWidth = cards[0].offsetWidth;
+            const carouselWidth = carousel.offsetWidth;
+            const moveDistance = (carouselWidth / 2) - (cardWidth / 2) - (cardWidth * currentIndex);
+            
+            carousel.style.transform = `translateX(${moveDistance}px)`;
+        
+            cards.forEach((card, index) => {
+                card.classList.remove('active');
+                if (index === currentIndex) {
+                    card.classList.add('active');
+                }
+            });
+        }
+        
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalCards;
+            updateCarousel();
+        });
+        
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+            updateCarousel();
+        });
+        
+        updateCarousel();
+    </script>
+
+    
+
+    <h1>Pamiri Culture and Heritage</h1>
+    <p>The Pamiri people have a unique culture that dates back thousands of years. They are known for their traditional crafts, clothing, and practices, which reflect their deep connection to the natural world and the mountains they call home.</p>
+
+    <h2>Pamiri Traditional Clothing</h2>
+    <p>The Pamiri people wear traditional garments made from wool and cotton, often in bright colors, symbolizing life and celebration. Women wear embroidered headscarves and dresses, while men wear woolen hats called "Pakol."</p>
+
+    <h2>Pamiri Music</h2>
+    <p>Music plays an important role in Pamiri culture, with instruments like the **Setor** (a traditional string instrument) and **Rubab** used in many ceremonies. The melodies often reflect the natural beauty and spiritual traditions of the region.</p>
+
+
+</body>
+</html>

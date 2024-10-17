@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News and events</title>
+    <link rel="stylesheet" href="events.css"> 
+</head>
+<body>
+   
+    <header class="header">
+        <img src="Logo.png"  class="logo">
+        <h1 class="page-title">~News and Events~</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; 
+        </div>
+    </header>
+
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Culture .html">Culture and Heritage</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="language.html">Language</a></li>
+            <li><a href="more.html">More</a></li>
+        </ul>
+
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            if (navbar.style.display === "block") {
+                navbar.style.display = "none";
+            } else {
+                navbar.style.display = "block";
+            }
+        }
+    </script>
+
+    <h1>Events in Pamir</h1>
+    <p>Pamiri people celebrate various events throughout the year, including religious and cultural festivals.</p>
+
+    <h2>Navruz (New Year)</h2>
+    <p>Navruz is one of the most celebrated events in the Pamir region. It marks the beginning of the new year and the start of spring. People come together to share meals, dance, and sing traditional songs.</p>
+
+    <h2>Osh Festival</h2>
+    <p>The Osh Festival celebrates the Pamiri dish called **Osh**, a savory rice and meat dish shared during large gatherings. It's a time for the community to come together and celebrate unity.</p>
+
+</body>
+</html>

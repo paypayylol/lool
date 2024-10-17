@@ -1,0 +1,129 @@
+body {
+    background-color: #B3B792;
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #5C4033;
+    color: white;
+    text-align: left;
+}
+
+/* Adjust the navbar styles */
+.navbar {
+    display: none;
+    background-color: #5C4033;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    z-index: 9999; 
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-bottom: 10px;
+    border-radius: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    padding: 10px;
+    background-color: #5C4033;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #8B6B61;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #5C4033;
+    color: white;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    color: #d4c3bb;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.page-title {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #5C4033;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #8B6B61;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #8B6B61;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #a64b4b;
+}
+
+.navbar ul li {
+    margin-bottom: 10px;
+    border-radius: 0; 
+    padding: 10px;
+}
